@@ -63,5 +63,14 @@ page_type: introduction
 		ways to update to the new versions.
 	</p>
 
+        <hr size="1" />
+
+	<h3>Upgrading Form Tools 2.2.x to 3.0.x</h3>
+
+	<p>
+		If your modules section (in the menu at the left) does not open after the upgrade, remove the "Core Field Types" (core_field_types) entry in your database from table ft_modules
+		and delete folder <quote>[form tools]/modules/core_field_types/ </quote>.
+	</p>
+
 
 {% include close_section.html %}
