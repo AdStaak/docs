@@ -51,9 +51,15 @@ categories: upgrading
     <li>Form Tools 3 now requires PHP 5.3 and later, including PHP 7 (Form Tools 2 supported PHP 4.3 - 5).</li>
     <li>
         The "Core Field Types" module has been incorporated into the Core code. The module no longer exists as a
-        standalone module. After you upgrade log in and go to the Modules page. Then you will need to delete the
-        <code>[form tools root]/modules/core_field_types/</code> folder.
+        standalone module. You will need to delete the <code>[form tools root]/modules/core_field_types/</code> folder.</li>
     <li>
+        After you upgrade log in and go to the Modules page. If the Modules page does not show, 
+        you will need to delete the "Core Field Types" <code>core_field_types</code> entry from the ft_modules table in the database.</li>
+    <li>
+        Go to the Modules page and update all your modules.
+    </li>
+    <li>
+        
         <b>global/config.php changes</b>
         <ul>
             <li>The <code>$g_unicode</code> config setting has been removed.</li>
